@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>nedderhoff.xyz/skills/</loc>
+    <loc>http://nedderhoff.xyz/skills/</loc>
   </url>
   <url>
-    <loc>nedderhoff.xyz/software/</loc>
+    <loc>http://nedderhoff.xyz/software/</loc>
   </url>
   <url>
-    <loc>nedderhoff.xyz/cv/</loc>
+    <loc>http://nedderhoff.xyz/cv/</loc>
   </url>
   <url>
-    <loc>nedderhoff.xyz/impressum/</loc>
+    <loc>http://nedderhoff.xyz/impressum/</loc>
   </url>
   <url>
-    <loc>nedderhoff.xyz/</loc>
+    <loc>http://nedderhoff.xyz/</loc>
   </url>
   <url>
-    <loc>nedderhoff.xyz/google3a4a0a6e7026b0de.html</loc>
+    <loc>http://nedderhoff.xyz/google3a4a0a6e7026b0de.html</loc>
     <lastmod>2015-09-09T13:59:13+02:00</lastmod>
   </url>
 </urlset>
