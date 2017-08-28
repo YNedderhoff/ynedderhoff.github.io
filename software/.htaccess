@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule nedderhoff.xyz/software(.*)$ http://github.com/ynedderhoff/$1 [L,R=301]
+
