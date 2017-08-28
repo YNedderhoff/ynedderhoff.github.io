@@ -1,186 +1,111 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE html>
+<html >
 <head>
-<meta charset="utf-8">
-<title>Yanick Nedderhoff</title>
-<meta name="description" content="Java Developer, Computational Linguist & Natural Language Processor.">
-<meta name="keywords" content="yanick, nedderhoff, computerlinguist, computerlinguistik, computational linguist, computational linguistics, java developer, software developer, softwareentwickler, javaentwickler, natural language processing, maschinelle sprachverarbeitung, universität stuttgart, lebenslauf, cv, curriculum vitae, beruflicher werdegang, ausbildung, skills, fähigkeiten, kenntnisse, sprachkenntnisse, edv-kenntnisse, programme, software">
+  <meta charset="UTF-8">
+  <title>Yanick Nedderhoff</title>
+  <meta name="description" content="Java Developer, Computational Linguist & Natural Language Processor.">
+  <meta name="keywords" content="yanick, nedderhoff, computerlinguist, computerlinguistik, computational linguist, computational linguistics, java developer, software developer, softwareentwickler, javaentwickler, natural language processing, maschinelle sprachverarbeitung, universität stuttgart, lebenslauf, cv, curriculum vitae, beruflicher werdegang, ausbildung, skills, fähigkeiten, kenntnisse, sprachkenntnisse, edv-kenntnisse, programme, software">
+
+  <link rel="canonical" href="http://nedderhoff.xyz/">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="http://nedderhoff.xyz/icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://nedderhoff.xyz/icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://nedderhoff.xyz/icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://nedderhoff.xyz/icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://nedderhoff.xyz/icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://nedderhoff.xyz/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://nedderhoff.xyz/icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://nedderhoff.xyz/icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://nedderhoff.xyz/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="shortcut icon" href="http://nedderhoff.xyz/icons/favicon.ico">
+
+  <!-- For all browsers -->
+  <link rel="stylesheet" href="http://nedderhoff.xyz/css/style.css">
 
 
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Yanick Nedderhoff">
-<meta name="twitter:description" content="Java Developer, Computational Linguist & Natural Language Processor.">
-<meta name="twitter:site" content="@ynedderhoff">
-<meta name="twitter:creator" content="@ynedderhoff">
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body {
+  background: #222 url("https://25.media.tumblr.com/a408ad9af259cf827ed4599d60bcb0a9/tumblr_myebwtELvb1st5lhmo1_1280.jpg") no-repeat fixed center;
+  background-size: cover;
+  overflow: hidden;
+}
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://nedderhoff.xyz/images/indian-country-wide.jpg">
+.social {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
 
-<!-- Open Graph -->
-<meta property="og:locale" content="de_DE">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Yanick Nedderhoff">
-<meta property="og:description" content="Java Developer, Computational Linguist & Natural Language Processor.">
-<meta property="og:url" content="http://nedderhoff.xyz/">
-<meta property="og:site_name" content="Yanick Nedderhoff">
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 70px;
+}
 
-<meta property="og:image" content="http://nedderhoff.xyz/images/indian-country-wide.jpg">
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateY(-20px) rotate(0deg);
+}
 
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
 
+.social .link.github {
+  background-color: #000000;
+  color: white;
+}
 
+.social .link.linkedin {
+  background-color: #0077b5;
+  color: white;
+}
 
+    </style>
 
-<link rel="canonical" href="http://nedderhoff.xyz/">
-<link href="http://nedderhoff.xyz/feed.xml" type="application/atom+xml" rel="alternate" title="Yanick Nedderhoff Feed">
-
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="http://nedderhoff.xyz/assets/css/main.css">
-
-<meta http-equiv="cleartype" content="on">
-
-<!-- HTML5 Shiv and Media Query Support -->
-<!--[if lt IE 9]>
-	<script src="http://nedderhoff.xyz/assets/js/vendor/html5shiv.min.js"></script>
-	<script src="http://nedderhoff.xyz/assets/js/vendor/respond.min.js"></script>
-<![endif]-->
-
-<!-- Modernizr -->
-<script src="http://nedderhoff.xyz/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
-
-<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-
-<link rel="apple-touch-icon" sizes="57x57" href="http://nedderhoff.xyz/icons/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="http://nedderhoff.xyz/icons/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="http://nedderhoff.xyz/icons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="http://nedderhoff.xyz/icons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="http://nedderhoff.xyz/icons/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="http://nedderhoff.xyz/icons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="http://nedderhoff.xyz/icons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="http://nedderhoff.xyz/icons/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="http://nedderhoff.xyz/icons/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/favicon-194x194.png" sizes="194x194">
-<link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="http://nedderhoff.xyz/icons/manifest.json">
-<link rel="shortcut icon" href="http://nedderhoff.xyz/icons/favicon.ico">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-TileImage" content="http://nedderhoff.xyz/icons/mstile-144x144.png">
-<meta name="msapplication-config" content="http://nedderhoff.xyz/icons/browserconfig.xml">
-<meta name="theme-color" content="#000000">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>
 
-<body class="home">
-<!--googleoff: snippet-->
-<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+<body>
+  <div class="social">
+  <a href="https://twitter.com/ynedderhoff" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
+  <a href="https://github.com/ynedderhoff" class="link github" target="_parent"><span class="fa fa-github"></span></a>
+  <a href="https://linkedin.com/in/ynedderhoff/" class="link linkedin" target="_parent"><span class="fa fa-linkedin"></span></a>
+</div>
 
-<div class="navigation-wrapper">
-	<div class="site-name">
-		<a href="http://nedderhoff.xyz/">Yanick Nedderhoff</a>
-	</div><!-- /.site-name -->
-	<div class="top-navigation">
-		<nav id="site-nav" class="nav">
-		    <ul>
-		        
-				    
-				    <li><a href="http://nedderhoff.xyz/cv/" >Lebenslauf</a></li>
-				
-				    
-				    <li><a href="http://nedderhoff.xyz/skills/" >Fähigkeiten</a></li>
-				
-				    
-				    <li><a href="http://nedderhoff.xyz/software/" >Software</a></li>
-				
-		    </ul>
-		</nav>
-	</div><!-- /.top-navigation -->
-</div><!-- /.navigation-wrapper -->
-
-
-
-  <div class="image-wrap">
-  <img src=
-    
-      "http://nedderhoff.xyz/images/indian-country-wide.jpg"
-    
-  alt=" feature image">
-  
-  </div><!-- /.image-wrap -->
-
-
-<div id="main" role="main">
-  <div class="article-author-side">
-    
-
-<div itemscope itemtype="http://schema.org/Person">
-
-
-	<img src="http://nedderhoff.xyz/images/bewerbung1_hoch.jpg" class="bio-photo" alt="Yanick Nedderhoff bio photo">
-
-
-  <h3 itemprop="name">Yanick Nedderhoff</h3>
-  <p>Java Developer & Computational Linguist</p>
-  <a href="mailto:mail@nedderhoff.xyz" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope"></i> Email</a>
-  <a href="http://twitter.com/ynedderhoff" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
-  
-  
-  <a href="http://www.xing.com/profile/Yanick_Nedderhoff" class="author-social" target="_blank"><i class="fa fa-fw fa-xing"></i> XING</a>
-  <a href="http://linkedin.com/in/ynedderhoff" class="author-social" target="_blank"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
-  
-  <a href="http://github.com/ynedderhoff" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
-  <a href="http://bitbucket.org/ynedderhoff" class="author-social" target="_blank"><i class="fa fa-fw fa-bitbucket"></i> Bitbucket</a>
-  <a href="http://stackoverflow.com/users/4566693/yanick-nedderhoff" class="author-social" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i> Stack Overflow</a>
-  <a href="http://stackexchange.com/users/5788238/yanick-nedderhoff" class="author-social" target="_blank"><i class="fa fa-fw fa-stack-exchange"></i> Stack Exchange</a>
-  <a href="http://www.flickr.com/photos/ynedderhoff" class="author-social" target="_blank"><i class="fa fa-fw fa-flickr"></i> Flickr</a>
-  <a href="http://last.fm/user/DrFlaenders" class="author-social" target="_blank"><i class="fa fa-fw fa-lastfm"></i> Last.fm</a>
-  <a href="http://soundcloud.com/ynedderhoff" class="author-social" target="_blank"><i class="fa fa-fw fa-soundcloud"></i> Soundcloud</a>
-  </div>
-
-  </div>
-  <div id="index">
-    <!--
-    <h3><a href="http://nedderhoff.xyz/posts/">Recent Posts</a></h3>
-    
-    -->
-    
-
-    <br>
-    <b>Yanick Nedderhoff</b></br>
-    <span style="color:darkgray"><i>M.Sc. Computational Linguistics</i></span><br><br>
-
-    <a class="twitter-timeline" href="https://twitter.com/YNedderhoff" data-widget-id="701736509553123329">Tweets von @YNedderhoff </a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-  </div><!-- /#index -->
-
-
-</div><!-- /#main -->
-
-
-<!--googleon: snippet-->
-<div class="footer-wrap">
-  <footer>
-    
-
-<span>&copy; 2016 Yanick Nedderhoff. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> theme. | <a href="/impressum">Impressum</a></span>
-
-  </footer>
-</div><!-- /.footer-wrap -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://nedderhoff.xyz/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="http://nedderhoff.xyz/assets/js/scripts.min.js"></script>
 
 <!-- Asynchronous Google Analytics snippet -->
 <script>
@@ -197,9 +122,6 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
-
-
 
 </body>
 </html>
