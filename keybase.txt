@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ynedderhoff
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://nedderhoff.xyz
+  * I am ynedderhoff (https://keybase.io/ynedderhoff) on keybase.
+  * I have a public key ASC-ASptePne1JQ2ellvCGaN-AcXl-2J1O1_soaQe4E7nAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01202d79e5b6c10cd7f0c3d8a6c92fb8a277720aca792391081045d6f49f8929035c0a",
+      "host": "keybase.io",
+      "kid": "0120be012a6d78f9ded494367a596f08668df8071797ed89d4ed7fb286907b813b9c0a",
+      "uid": "6709b6963cc6dadadefc3d2ecf1e5a19",
+      "username": "ynedderhoff"
+    },
+    "merkle_root": {
+      "ctime": 1507485533,
+      "hash": "63f5fd904b7eeeb20c42185972dc7384f27a0ff0f32f217346579065f685609012c21f0dd9d20a257d353e2b80d95bab094f2377c88988c1172b65e22c31f3c2",
+      "hash_meta": "2ae2dad6f666a3996e2d33f5476b31f081666e9a221bc97f9cccbb67a315d839",
+      "seqno": 1540744
+    },
+    "service": {
+      "hostname": "nedderhoff.xyz",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.34"
+  },
+  "ctime": 1507485555,
+  "expire_in": 504576000,
+  "prev": "19b5b14ba20b8adacca686ca9339757d1c70965d994783783ac0d09069c4bf1b",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvgEqbXj53tSUNnpZbwhmjfgHF5ftidTtf7KGkHuBO5wKp3BheWxvYWTFA0l7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMmQ3OWU1YjZjMTBjZDdmMGMzZDhhNmM5MmZiOGEyNzc3MjBhY2E3OTIzOTEwODEwNDVkNmY0OWY4OTI5MDM1YzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYmUwMTJhNmQ3OGY5ZGVkNDk0MzY3YTU5NmYwODY2OGRmODA3MTc5N2VkODlkNGVkN2ZiMjg2OTA3YjgxM2I5YzBhIiwidWlkIjoiNjcwOWI2OTYzY2M2ZGFkYWRlZmMzZDJlY2YxZTVhMTkiLCJ1c2VybmFtZSI6InluZWRkZXJob2ZmIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA3NDg1NTMzLCJoYXNoIjoiNjNmNWZkOTA0YjdlZWViMjBjNDIxODU5NzJkYzczODRmMjdhMGZmMGYzMmYyMTczNDY1NzkwNjVmNjg1NjA5MDEyYzIxZjBkZDlkMjBhMjU3ZDM1M2UyYjgwZDk1YmFiMDk0ZjIzNzdjODg5ODhjMTE3MmI2NWUyMmMzMWYzYzIiLCJoYXNoX21ldGEiOiIyYWUyZGFkNmY2NjZhMzk5NmUyZDMzZjU0NzZiMzFmMDgxNjY2ZTlhMjIxYmM5N2Y5Y2NjYmI2N2EzMTVkODM5Iiwic2Vxbm8iOjE1NDA3NDR9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoibmVkZGVyaG9mZi54eXoiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM0In0sImN0aW1lIjoxNTA3NDg1NTU1LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjE5YjViMTRiYTIwYjhhZGFjY2E2ODZjYTkzMzk3NTdkMWM3MDk2NWQ5OTQ3ODM3ODNhYzBkMDkwNjljNGJmMWIiLCJzZXFubyI6MTAsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAOx5xggp/hUmHS2FOEGb89KqAU08g4u/lxv/lCY9XhI7iS1OCDmvI4tFX4QVRquLsda6INTRcOWaLMxUWuYm0BahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIC8iB9aNXi3Z2fSqTj3Qpfp4hZkKUA1ITvqc0ue+o6qAo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ynedderhoff
+
+==================================================================
+
