@@ -6,9 +6,9 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    #border: thin dashed black;
     background-clip: content-box;
-    padding: 4px;
+    border: none;
+    padding: 5px;
     transition: .5s;
     color: #D7D0BE;
     margin: 5px;
