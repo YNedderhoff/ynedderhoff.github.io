@@ -68,6 +68,11 @@
     <link rel="icon" type="image/png" href="http://nedderhoff.xyz/icons/favicon-16x16.png" sizes="16x16">
     <link rel="shortcut icon" href="http://nedderhoff.xyz/icons/favicon.ico">
 
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <script type="text/javascript" src="scripts/hiddenProfileLoader.js" async></script>
+
 </head>
 <body>
 
@@ -86,7 +91,8 @@
                         Stuttgart</a>.</p>
                     <!--googleoff: snippet-->
                     <div class="social">
-                        <div class="user" style="background-image:url('profile.jpg')"></div>
+                        <div onclick="toggleHiddenProfile()" class="user"
+                             style="background-image:url('profile.jpg')"></div>
                         <a href="yanick-nedderhoff.asc" class="link key" target="_parent"><span
                                 class="fas fa-key"></span></a>
                         <a href="mailto:hey@yanick.xyz" class="link mail" target="_parent"><span
@@ -113,6 +119,13 @@
                                 class="fab fa-reddit-alien"></span></a>
                         <a href="https://www.slideshare.net/YNedderhoff" class="link slideshare" target="_parent"><span
                                 class="fab fa-slideshare"></span></a>
+
+
+                    </div>
+                </div>
+                <div id="hiddenProfile" class="one-half column" style="margin-top: 25%;display: none;">
+                    <div class="hiddenProfile">
+                        🥚 Easter Egg 🥚
                     </div>
                 </div>
             </div>

@@ -22,5 +22,11 @@
     transform: scale(1.2);
 }
 
+.hiddenProfile {
+    width: 120px;
+    height: 20px;
+}
 
-
+.hiddenProfile:hover {
+    transform: rotate(180deg);
+}
