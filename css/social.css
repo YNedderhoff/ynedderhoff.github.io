@@ -48,3 +48,33 @@
     background-color: #FD6F31;
     color: white;
 }
+
+.social .link.soundcloud {
+    background-color: #FC561F;
+    color: white;
+}
+
+.social .link.dockerhub {
+    background-color: #23364B;
+    color: white;
+}
+
+.social .link.goodreads {
+    background-color: #DBD2BF;
+    color: white;
+}
+
+.social .link.reddit {
+    background-color: #FC4820;
+    color: white;
+}
+
+.social .link.slideshare {
+    background-color: #0077b5;
+    color: white;
+}
+
+.social .link.stackoverflow {
+    background-color: #F27F33;
+    color: white;
+}
