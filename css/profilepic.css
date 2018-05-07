@@ -1,10 +1,26 @@
 .user {
+    text-align: center;
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    vertical-align: middle;
+    position: relative;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-
-    background-repeat: no-repeat;
-    background-position: center center;
+    #border: thin dashed black;
+    background-clip: content-box;
+    padding: 4px;
+    transition: .5s;
+    color: #D7D0BE;
+    margin: 5px;
+    font-size: 25px;
+    background: no-repeat center center;
     background-size: cover;
+    z-index: 1000;
 }
+
+.user:hover {
+    transform: scale(1.2);
+}
+
+
+
