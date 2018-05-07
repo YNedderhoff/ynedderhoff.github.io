@@ -1,0 +1,53 @@
+.social .link {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: thin dashed black;
+    background-clip: content-box;
+    padding: 4px;
+    transition: .5s;
+    color: #D7D0BE;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.social .link:hover {
+    transform: scale(1.2);
+}
+
+.social .link.key {
+    background-color: white;
+    color: #D7D0BF;
+}
+
+.social .link.mail {
+    background-color: #8BC35A;
+    color: white;
+}
+
+.social .link.twitter {
+    background-color: #00ACEE;
+    color: white;
+}
+
+.social .link.github {
+    background-color: #000000;
+    color: white;
+}
+
+.social .link.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.social .link.keybase {
+    background-color: #FD6F31;
+    color: white;
+}
