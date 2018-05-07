@@ -6,7 +6,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px dashed black;
+    border: 1px dashed grey;
     background-clip: content-box;
     padding: 4px;
     transition: .5s;
