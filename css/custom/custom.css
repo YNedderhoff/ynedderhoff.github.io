@@ -23,6 +23,38 @@ social
     transform: scale(1.2);
 }
 
+/* colors are ordered using /scripts/python/color_sorter.py */
+
+.social .link.github {
+    background-color: #000000;
+    color: white;
+}
+
+.social .link.reddit {
+    background-color: #FC4820;
+    color: white;
+}
+
+.social .link.soundcloud {
+    background-color: #FC561F;
+    color: white;
+}
+
+.social .link.keybase {
+    background-color: #FD6F31;
+    color: white;
+}
+
+.social .link.stackoverflow {
+    background-color: #F27F33;
+    color: white;
+}
+
+.social .link.goodreads {
+    background-color: #DBD2BF;
+    color: white;
+}
+
 .social .link.key {
     background-color: white;
     color: #D7D0BF;
@@ -38,38 +70,8 @@ social
     color: white;
 }
 
-.social .link.github {
-    background-color: #000000;
-    color: white;
-}
-
 .social .link.linkedin {
     background-color: #0077b5;
-    color: white;
-}
-
-.social .link.keybase {
-    background-color: #FD6F31;
-    color: white;
-}
-
-.social .link.soundcloud {
-    background-color: #FC561F;
-    color: white;
-}
-
-.social .link.dockerhub {
-    background-color: #23364B;
-    color: white;
-}
-
-.social .link.goodreads {
-    background-color: #DBD2BF;
-    color: white;
-}
-
-.social .link.reddit {
-    background-color: #FC4820;
     color: white;
 }
 
@@ -78,8 +80,8 @@ social
     color: white;
 }
 
-.social .link.stackoverflow {
-    background-color: #F27F33;
+.social .link.dockerhub {
+    background-color: #23364B;
     color: white;
 }
 
