@@ -117,7 +117,7 @@ profile pic
 }
 
 .hiddenProfile:hover {
-    transform: rotate(180deg);
+    transform: rotateX(360deg)
 }
 
 /*
