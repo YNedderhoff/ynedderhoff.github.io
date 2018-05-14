@@ -1,3 +1,7 @@
+/*
+social
+ */
+
 .social .link {
     text-align: center;
     display: inline-block;
@@ -77,4 +81,73 @@
 .social .link.stackoverflow {
     background-color: #F27F33;
     color: white;
+}
+
+/*
+profile pic
+ */
+
+.user {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-clip: content-box;
+    border: none;
+    padding: 5px;
+    transition: .5s;
+    color: #D7D0BE;
+    margin: 5px;
+    font-size: 25px;
+    background: no-repeat center center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.user:hover {
+    transform: scale(1.2);
+}
+
+.hiddenProfile {
+    width: 120px;
+    height: 20px;
+}
+
+.hiddenProfile:hover {
+    transform: rotate(180deg);
+}
+
+/*
+footer
+ */
+
+
+html, body {
+    height: 100%;
+}
+
+.table-container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.table-block {
+    display: table-row;
+    height: 1px;
+}
+
+.footer-push {
+    height: auto;
+}
+
+#footer {
+    font-style: normal;
+    font-size: x-small;
+    font-weight: lighter;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
