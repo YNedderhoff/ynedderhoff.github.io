@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /impressum/
 Disallow: /datenschutzerklaerung/
 Allow: /
-Sitemap: http://nedderhoff.xyz/sitemap.xml
+Sitemap: https://nedderhoff.xyz/sitemap.xml
