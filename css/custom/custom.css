@@ -65,6 +65,11 @@ social
     color: white;
 }
 
+.social .link.spotify {
+    background-color: #1CD156;
+    color: white;
+}
+
 .social .link.twitter {
     background-color: #00ACEE;
     color: white;
