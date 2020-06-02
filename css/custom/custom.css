@@ -30,6 +30,11 @@ social
     color: white;
 }
 
+.social .link.lastfm {
+    background-color: #BA0200;
+    color: white;
+}
+
 .social .link.reddit {
     background-color: #FC4820;
     color: white;
