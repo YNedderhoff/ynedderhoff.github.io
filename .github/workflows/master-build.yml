@@ -1,0 +1,21 @@
+name: Check
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check HTML
+        uses: chabad360/htmlproofer@v1.1
+        with:
+          directory: .
+          arguments: --allow-missing-href --disable-external --check-html
+      # Enable when HTML errors fixed
+      #- name: Check HTML5
+      #  uses: Cyb3r-Jak3/html5validator-action@v0.4.2
+      #  with:
+      #    root: .
