@@ -1,6 +1,6 @@
 User-agent: *
 Disallow: /impressum/
 Disallow: /datenschutzerklaerung/
-Disallow: /keeweb/
 Allow: /
+Allow: /citytweets
 Sitemap: https://nedderhoff.xyz/sitemap.xml
