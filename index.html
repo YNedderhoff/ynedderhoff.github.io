@@ -4,6 +4,8 @@
 
     <link rel="canonical" href="https://nedderhoff.xyz/">
 
+    <!-- Links are made nonblocking whenever possible, see https://stackoverflow.com/a/40314216/4566693 -->
+
     <!-- Google Analytics -->
     <script>
         window.ga = window.ga || function () {
@@ -50,20 +52,33 @@
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/generated/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icons/generated/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/generated/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/generated/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/generated/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/generated/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/generated/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/generated/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/generated/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="icons/generated/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/generated/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/generated/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/generated/favicon-16x16.png">
-    <link rel="manifest" href="icons/generated/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/generated/apple-icon-57x57.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/generated/apple-icon-60x60.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/generated/apple-icon-72x72.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/generated/apple-icon-76x76.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/generated/apple-icon-114x114.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/generated/apple-icon-120x120.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/generated/apple-icon-144x144.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/generated/apple-icon-152x152.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/generated/apple-icon-180x180.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/generated/android-icon-192x192.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/generated/favicon-32x32.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/generated/favicon-96x96.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/generated/favicon-16x16.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="manifest" href="icons/generated/manifest.json" media="none" onload="if(media!='all')media='all'">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/generated/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
