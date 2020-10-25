@@ -4,6 +4,8 @@
 
     <link rel="canonical" href="https://nedderhoff.xyz/">
 
+    <!-- Links are made nonblocking whenever possible, see https://stackoverflow.com/a/40314216/4566693 -->
+
     <meta name="robots" content="noindex, follow">
 
     <!-- Basic Page Needs
@@ -24,38 +26,49 @@
 
     <!-- FONT
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" media="none"
-          onload="if(media!='all')media='all'">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" media="all">
     <!-- log in to fontawesome.com for any changes to this -->
     <script async src="https://kit.fontawesome.com/e2bdf7600b.js" crossorigin="anonymous"></script>
 
     <!-- CSS
      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="../css/skeleton/normalize.css" media="none" onload="if(media!='all')media='all'">
-    <link rel="stylesheet" href="../css/skeleton/skeleton.css" media="none" onload="if(media!='all')media='all'">
-    <link rel="stylesheet" href="../css/custom/custom.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="../css/skeleton/normalize.css" media="all">
+    <link rel="stylesheet" href="../css/skeleton/skeleton.css" media="all">
+    <link rel="stylesheet" href="../css/custom/custom.css" media="all">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <link rel="apple-touch-icon" sizes="57x57" href="../icons/generated/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../icons/generated/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../icons/generated/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../icons/generated/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../icons/generated/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../icons/generated/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../icons/generated/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../icons/generated/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../icons/generated/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../icons/generated/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../icons/generated/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../icons/generated/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../icons/generated/favicon-16x16.png">
-    <link rel="manifest" href="../icons/generated/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/generated/apple-icon-57x57.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/generated/apple-icon-60x60.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/generated/apple-icon-72x72.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/generated/apple-icon-76x76.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/generated/apple-icon-114x114.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/generated/apple-icon-120x120.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/generated/apple-icon-144x144.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/generated/apple-icon-152x152.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/generated/apple-icon-180x180.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/generated/android-icon-192x192.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/generated/favicon-32x32.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/generated/favicon-96x96.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/generated/favicon-16x16.png" media="none"
+          onload="if(media!='all')media='all'">
+    <link rel="manifest" href="icons/generated/manifest.json" media="none" onload="if(media!='all')media='all'">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../icons/generated/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="icons/generated/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
 
 </head>
 
@@ -66,7 +79,8 @@
         <div class="container">
             <div class="row">
                 <div class="one-half column" style="margin-top: 15%">
-                    <h4>Datenschutzerklärung</h4>
+
+                    <h1 class="title">Datenschutzerklärung</h1>
                     <!--googleoff: snippet-->
                     <p><strong>Allgemeiner Hinweis und Pflichtinformationen</strong></p>
                     <p><strong>Benennung der verantwortlichen Stelle</strong></p>
@@ -128,8 +142,9 @@
                     <p>Sie können Ihre Datenschutzeinstellungen bei Twitter ändern: <a
                             href="https://twitter.com/account/settings">https://twitter.com/account/settings</a></p>
                     <p>
-                        <small>Quelle: Datenschutz-Konfigurator von <a href="https://www.mein-datenschutzbeauftragter.de"
-                                                                       target="_blank">mein-datenschutzbeauftragter.de</a>
+                        <small>Quelle: Datenschutz-Konfigurator von <a
+                                href="https://www.mein-datenschutzbeauftragter.de"
+                                target="_blank">mein-datenschutzbeauftragter.de</a>
                         </small>
                     </p>
                 </div>
