@@ -156,7 +156,8 @@ html, body {
 
 /*
 Title font - should equal h4 as defined in skeleton.css.
-This is because h4 should not be used as it carries semantics.
+This is because h4 should not be used as it carries unwanted semantics.
+Instead using <h1 class="title">
 */
 
 .title {
