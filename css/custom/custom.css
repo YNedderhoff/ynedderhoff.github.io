@@ -90,6 +90,11 @@ social
     color: white;
 }
 
+.social .link.stackexchange {
+    background-color: #3097E8;
+    color: white;
+}
+
 .social .link.dockerhub {
     background-color: #23364B;
     color: white;
