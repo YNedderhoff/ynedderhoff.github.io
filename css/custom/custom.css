@@ -35,6 +35,11 @@ social
     color: white;
 }
 
+.social .link.instagram {
+    background-color: #E44734;
+    color: white;
+}
+
 .social .link.reddit {
     background-color: #FC4820;
     color: white;
