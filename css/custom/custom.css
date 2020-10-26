@@ -100,6 +100,11 @@ social
     color: white;
 }
 
+.social .link.steam {
+    background-color: #19445D;
+    color: white;
+}
+
 .social .link.slideshare {
     background-color: #0077b5;
     color: white;
