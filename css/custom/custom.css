@@ -75,6 +75,11 @@ social
     color: white;
 }
 
+.social .link.xing {
+    background-color: #056467;
+    color: white;
+}
+
 .social .link.twitter {
     background-color: #00ACEE;
     color: white;
