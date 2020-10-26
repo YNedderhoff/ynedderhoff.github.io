@@ -60,6 +60,11 @@ social
     color: white;
 }
 
+.social .link.strava {
+    background-color: #FC5205;
+    color: white;
+}
+
 .social .link.stackoverflow {
     background-color: #F27F33;
     color: white;
