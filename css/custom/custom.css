@@ -40,6 +40,11 @@ social
     color: white;
 }
 
+.social .link.gitlab {
+    background-color: #FC4820;
+    color: white;
+}
+
 .social .link.reddit {
     background-color: #FC4820;
     color: white;
@@ -95,6 +100,11 @@ social
     color: white;
 }
 
+.social .link.steam {
+    background-color: #19445D;
+    color: white;
+}
+
 .social .link.slideshare {
     background-color: #0077b5;
     color: white;
@@ -102,6 +112,11 @@ social
 
 .social .link.stackexchange {
     background-color: #3097E8;
+    color: white;
+}
+
+.social .link.dev {
+    background-color: #08090A;
     color: white;
 }
 
