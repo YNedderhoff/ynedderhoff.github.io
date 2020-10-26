@@ -35,6 +35,11 @@ social
     color: white;
 }
 
+.social .link.instagram {
+    background-color: #E44734;
+    color: white;
+}
+
 .social .link.reddit {
     background-color: #FC4820;
     color: white;
@@ -75,6 +80,11 @@ social
     color: white;
 }
 
+.social .link.xing {
+    background-color: #056467;
+    color: white;
+}
+
 .social .link.twitter {
     background-color: #00ACEE;
     color: white;
@@ -87,6 +97,11 @@ social
 
 .social .link.slideshare {
     background-color: #0077b5;
+    color: white;
+}
+
+.social .link.stackexchange {
+    background-color: #3097E8;
     color: white;
 }
 
