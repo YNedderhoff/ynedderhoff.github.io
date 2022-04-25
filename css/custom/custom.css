@@ -130,6 +130,11 @@ social
     color: white;
 }
 
+.social .link.mastodon {
+    background-color: #56A7E1;
+    color: white;
+}
+
 /*
 profile pic
  */
