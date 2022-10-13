@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Check HTML
-        uses: chabad360/htmlproofer@v1.1
+        uses: chabad360/htmlproofer@v2
         with:
           directory: .
           arguments: --allow-missing-href --disable-external --check-html
