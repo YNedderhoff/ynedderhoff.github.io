@@ -135,6 +135,11 @@ social
     color: white;
 }
 
+.social .link.gravatar {
+    background-color: #4678EA;
+    color: white;
+}
+
 /*
 profile pic
  */
