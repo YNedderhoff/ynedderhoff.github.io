@@ -105,13 +105,18 @@ social
     color: white;
 }
 
+.social .link.slideshare {
+    background-color: #0077b5;
+    color: white;
+}
+
 .social .link.steam {
     background-color: #19445D;
     color: white;
 }
 
-.social .link.slideshare {
-    background-color: #0077b5;
+.social .link.mastodon {
+    background-color: #56A7E1;
     color: white;
 }
 
@@ -130,8 +135,8 @@ social
     color: white;
 }
 
-.social .link.mastodon {
-    background-color: #56A7E1;
+.social .link.tiktok {
+    background-color: #FE2C55;
     color: white;
 }
 
