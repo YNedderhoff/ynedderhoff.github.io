@@ -140,6 +140,11 @@ social
     color: white;
 }
 
+.social .link.bluesky {
+    background-color: #1F89FE;
+    color: white;
+}
+
 /*
 profile pic
  */
