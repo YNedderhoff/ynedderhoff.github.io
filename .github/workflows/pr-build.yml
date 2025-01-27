@@ -19,6 +19,6 @@ jobs:
           css: true
       - name: Generate HTML preview
         id: html_preview
-        uses: pavi2410/html-preview-action@v2
+        uses: pavi2410/html-preview-action@v4
         with:
           html_file: 'index.html'
