@@ -222,3 +222,10 @@ Instead using <h1 class="title">
 @media (min-width: 550px) {
   .title { font-size: 3.0rem; }
 }
+
+/* Button style for toggleSocialBtn, reusing default .button styles */
+#toggleSocialBtn {
+  @extend .button; /* This line will inherit all styles from .button */
+  border: none;
+  padding: 0 8px; /* Because .social .link inner circle has a padding of 8 */
+}
