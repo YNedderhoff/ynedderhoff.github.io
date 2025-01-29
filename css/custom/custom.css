@@ -24,11 +24,39 @@ social
 }
 
 /* colors are ordered using /scripts/python/color_sorter.py */
+/* visible links */
+
+.social .link.mail {
+    background-color: #8BC35A;
+    color: white;
+}
+
+.social .link.key {
+    background-color: white;
+    color: #D7D0BF;
+}
+
+.social .link.mastodon {
+    background-color: #56A7E1;
+    color: white;
+}
+
+.social .link.bluesky {
+    background-color: #1F89FE;
+    color: white;
+}
+
+.social .link.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
 
 .social .link.github {
     background-color: #000000;
     color: white;
 }
+
+/* hidden links */
 
 .social .link.lastfm {
     background-color: #BA0200;
@@ -75,16 +103,6 @@ social
     color: white;
 }
 
-.social .link.key {
-    background-color: white;
-    color: #D7D0BF;
-}
-
-.social .link.mail {
-    background-color: #8BC35A;
-    color: white;
-}
-
 .social .link.spotify {
     background-color: #1CD156;
     color: white;
@@ -100,11 +118,6 @@ social
     color: white;
 }
 
-.social .link.linkedin {
-    background-color: #0077b5;
-    color: white;
-}
-
 .social .link.slideshare {
     background-color: #0077b5;
     color: white;
@@ -112,11 +125,6 @@ social
 
 .social .link.steam {
     background-color: #19445D;
-    color: white;
-}
-
-.social .link.mastodon {
-    background-color: #56A7E1;
     color: white;
 }
 
@@ -137,11 +145,6 @@ social
 
 .social .link.tiktok {
     background-color: #FE2C55;
-    color: white;
-}
-
-.social .link.bluesky {
-    background-color: #1F89FE;
     color: white;
 }
 
@@ -221,4 +224,11 @@ Instead using <h1 class="title">
 /* Larger than phablet */
 @media (min-width: 550px) {
   .title { font-size: 3.0rem; }
+}
+
+/* Button style for toggleSocialBtn, reusing default .button styles */
+#toggleSocialBtn {
+  @extend .button; /* This line will inherit all styles from .button */
+  border: none; /* comment out to see border for local development as font awesome is invisible */
+  padding: 0 8px; /* Because .social .link inner circle has a padding of 8 */
 }

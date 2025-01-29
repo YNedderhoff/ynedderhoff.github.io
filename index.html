@@ -96,59 +96,69 @@
                     </p>
                     <!--googleoff: snippet-->
                     <div class="social">
+                        <!-- Always visible links -->
                         <div onclick="toggleHiddenProfile()" class="user"
                              style="background-image:url('images/profile.jpg')"></div>
-                        <a href="https://github.com/ynedderhoff" class="link github" target="_parent" rel="me"><span
-                                class="fa-brands fa-github"></span></a>
-                        <a href="https://www.last.fm/user/YaNedderhoff" class="link lastfm" target="_parent" rel="me"><span
-                                class="fa-brands fa-lastfm"></span></a>
-                        <a href="https://www.instagram.com/ynedderhoff" class="link instagram" target="_parent" rel="me"><span
-                                class="fa-brands fa-instagram"></span></a>
-                        <a href="https://gitlab.com/YNedderhoff" class="link gitlab" target="_parent" rel="me"><span
-                                class="fa-brands fa-gitlab"></span></a>
-                        <a href="https://www.reddit.com/user/ynedderhoff" class="link reddit" target="_parent" rel="me"><span
-                                class="fa-brands fa-reddit-alien"></span></a>
-                        <a href="https://soundcloud.com/ynedderhoff" class="link soundcloud" target="_parent" rel="me"><span
-                                class="fa-brands fa-soundcloud"></span></a>
-                        <a href="https://keybase.io/ynedderhoff" class="link keybase" target="_parent" rel="me"><span
-                                class="fa-brands fa-keybase"></span></a>
-                        <a href="https://www.strava.com/athletes/ynedderhoff" class="link strava" target="_parent" rel="me"><span
-                                class="fa-brands fa-strava"></span></a>
-                        <a href="https://stackoverflow.com/users/4566693/yanick-nedderhoff?tab=profile"
-                           class="link stackoverflow" target="_parent" rel="me"><span class="fa-brands fa-stack-overflow"></span></a>
-                        <a href="https://goodreads.com/ynedderhoff" class="link goodreads"
-                           target="_parent" rel="me"><span
-                                class="fa-brands fa-goodreads-g"></span></a>
-                        <a href="yanick-nedderhoff.asc" class="link key" target="_parent" rel="me"><span
-                                class="fa-solid fa-key"></span></a>
                         <a href="mailto:hey@yanick.xyz" class="link mail" target="_parent" rel="me"><span
                                 class="fa-solid fa-envelope"></span></a>
-                        <a href="https://open.spotify.com/user/ynedderhoff" class="link spotify" target="_parent" rel="me"><span
-                                class="fa-brands fa-spotify"></span></a>
-                        <a href="https://www.xing.com/profile/Yanick_Nedderhoff" class="link xing"
-                           target="_parent" rel="me"><span
-                                class="fa-brands fa-xing"></span></a>
-                        <a href="https://twitter.com/ynedderhoff" class="link twitter" target="_parent" rel="me"><span
-                                class="fa-brands fa-twitter"></span></a>
-                        <a href="https://linkedin.com/in/ynedderhoff/" class="link linkedin" target="_parent" rel="me"><span
-                                class="fa-brands fa-linkedin-in"></span></a>
-                        <a href="https://www.slideshare.net/YNedderhoff" class="link slideshare" target="_parent" rel="me"><span
-                                class="fa-brands fa-slideshare"></span></a>
-                        <a href="https://steamcommunity.com/id/ynedderhoff/" class="link steam" target="_parent" rel="me"><span
-                                class="fa-brands fa-steam"></span></a>
+                        <a href="yanick-nedderhoff.asc" class="link key" target="_parent" rel="me"><span
+                                class="fa-solid fa-key"></span></a>
                         <a href="https://mastodon.social/@ynedderhoff" class="link mastodon" target="_parent" rel="me"><span
                                 class="fa-brands fa-mastodon"></span></a>
-                        <a href="https://stackexchange.com/users/5788238/yanick-nedderhoff" class="link stackexchange"
-                           target="_parent" rel="me"><span
-                                class="fa-brands fa-stack-exchange"></span></a>
-                        <a href="https://dev.to/ynedderhoff" class="link dev" target="_parent" rel="me"><span
-                                class="fa-brands fa-dev"></span></a>
                         <a href="https://bsky.app/profile/ynedderhoff.bsky.social" class="link bluesky" target="_parent" rel="me"><span
                                 class="fa-brands fa-bluesky"></span></a>
-                        <a href="https://hub.docker.com/u/ynedderhoff" class="link dockerhub" target="_parent" rel="me"><span
-                                class="fa-brands fa-docker"></span></a>
-                        <a href="https://tiktok.com/@ynedderhoff" class="link tiktok" target="_parent" rel="me"><span
-                                class="fa-brands fa-tiktok"></span></a>
+                        <a href="https://linkedin.com/in/ynedderhoff/" class="link linkedin" target="_parent" rel="me"><span
+                                class="fa-brands fa-linkedin-in"></span></a>
+                        <a href="https://github.com/ynedderhoff" class="link github" target="_parent" rel="me"><span
+                                class="fa-brands fa-github"></span></a>
+
+                        <!-- Hidden social links -->
+                        <div id="hiddenSocialLinks" style="display: none;">
+                            <a href="https://www.last.fm/user/YaNedderhoff" class="link lastfm" target="_parent" rel="me"><span
+                                    class="fa-brands fa-lastfm"></span></a>
+                            <a href="https://www.instagram.com/ynedderhoff" class="link instagram" target="_parent" rel="me"><span
+                                    class="fa-brands fa-instagram"></span></a>
+                            <a href="https://gitlab.com/YNedderhoff" class="link gitlab" target="_parent" rel="me"><span
+                                    class="fa-brands fa-gitlab"></span></a>
+                            <a href="https://www.reddit.com/user/ynedderhoff" class="link reddit" target="_parent" rel="me"><span
+                                    class="fa-brands fa-reddit-alien"></span></a>
+                            <a href="https://soundcloud.com/ynedderhoff" class="link soundcloud" target="_parent" rel="me"><span
+                                    class="fa-brands fa-soundcloud"></span></a>
+                            <a href="https://keybase.io/ynedderhoff" class="link keybase" target="_parent" rel="me"><span
+                                    class="fa-brands fa-keybase"></span></a>
+                            <a href="https://www.strava.com/athletes/ynedderhoff" class="link strava" target="_parent" rel="me"><span
+                                    class="fa-brands fa-strava"></span></a>
+                            <a href="https://stackoverflow.com/users/4566693/yanick-nedderhoff?tab=profile"
+                               class="link stackoverflow" target="_parent" rel="me"><span class="fa-brands fa-stack-overflow"></span></a>
+                            <a href="https://goodreads.com/ynedderhoff" class="link goodreads"
+                               target="_parent" rel="me"><span
+                                    class="fa-brands fa-goodreads-g"></span></a>
+                            <a href="https://open.spotify.com/user/ynedderhoff" class="link spotify" target="_parent" rel="me"><span
+                                    class="fa-brands fa-spotify"></span></a>
+                            <a href="https://www.xing.com/profile/Yanick_Nedderhoff" class="link xing"
+                               target="_parent" rel="me"><span
+                                    class="fa-brands fa-xing"></span></a>
+                            <a href="https://twitter.com/ynedderhoff" class="link twitter" target="_parent" rel="me"><span
+                                    class="fa-brands fa-twitter"></span></a>
+                            <a href="https://www.slideshare.net/YNedderhoff" class="link slideshare" target="_parent" rel="me"><span
+                                    class="fa-brands fa-slideshare"></span></a>
+                            <a href="https://steamcommunity.com/id/ynedderhoff/" class="link steam" target="_parent" rel="me"><span
+                                    class="fa-brands fa-steam"></span></a>
+                            <a href="https://stackexchange.com/users/5788238/yanick-nedderhoff" class="link stackexchange"
+                               target="_parent" rel="me"><span
+                                    class="fa-brands fa-stack-exchange"></span></a>
+                            <a href="https://dev.to/ynedderhoff" class="link dev" target="_parent" rel="me"><span
+                                    class="fa-brands fa-dev"></span></a>
+                            <a href="https://hub.docker.com/u/ynedderhoff" class="link dockerhub" target="_parent" rel="me"><span
+                                    class="fa-brands fa-docker"></span></a>
+                            <a href="https://tiktok.com/@ynedderhoff" class="link tiktok" target="_parent" rel="me"><span
+                                    class="fa-brands fa-tiktok"></span></a>
+                        </div>
+
+                        <!-- Toggle Button -->
+                        <button id="toggleSocialBtn" onClick="toggleHiddenSocial()">
+                          <i class="fa-solid fa-caret-down"></i>
+                        </button>
                     </div>
                 </div>
                 <div id="hiddenProfile" class="one-half column" style="margin-top: 15%;display: none;">
