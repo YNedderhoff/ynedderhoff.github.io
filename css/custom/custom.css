@@ -230,5 +230,7 @@ Instead using <h1 class="title">
 #toggleSocialBtn {
   @extend .button; /* This line will inherit all styles from .button */
   border: none; /* comment out to see border for local development as font awesome is invisible */
-  padding: 0 8px; /* Because .social .link inner circle has a padding of 8 */
+  font-size: 22px;
+  display: block; /* Make it a block element */
+  margin: 0 auto; /* Center it horizontally */
 }
