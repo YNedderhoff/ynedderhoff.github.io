@@ -24,7 +24,7 @@ Then open <http://localhost:8000/>.
 
 Each link is a `<li>` with the classes `p <name>`. The links form one rainbow. After adding a link and its colour in `css/style.css`, run `python3 scripts/sort_by_hue.py` and put the links in `index.html` in the order it prints. The glyph is white. Add `dark` only when white gives less than 3:1 on the brand colour (WCAG 1.4.11).
 
-The grid has 5 columns on every screen, so 20 links fill every row. With 19 links, as now, the last row is one short. Add or remove links in steps of five to keep every row full, or change the column count in `css/style.css`.
+The circles spread over the full width of the column: 5 columns on phones, 7 on wider screens. On wide screens 21 links fill every row, on phones 20 or 25. With another number the last row is shorter.
 
 To add an icon, copy the `<path>` and `viewBox` from the `svgs/` folder of the `@fortawesome/fontawesome-free` npm package.
 

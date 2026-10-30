@@ -131,11 +131,12 @@ a:focus-visible {
     margin-top: 2.25rem;
 }
 
-/* 5 columns: 20 links fill every row, with 19 only the last row is one short */
+/* The circles spread over the full width of the column. 5 columns on phones, 7 on wider screens. */
 .profiles {
     --size: 2.75rem;
     display: grid;
     grid-template-columns: repeat(5, var(--size));
+    justify-content: space-between;
     gap: .625rem;
     margin: 0;
     padding: 0;
@@ -145,6 +146,7 @@ a:focus-visible {
 @media (min-width: 30rem) {
     .profiles {
         --size: 3.125rem;
+        grid-template-columns: repeat(7, var(--size));
     }
 }
 
