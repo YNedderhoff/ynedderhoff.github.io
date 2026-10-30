@@ -22,7 +22,9 @@ Then open <http://localhost:8000/>.
 
 ## Changing the profile links
 
-Each link is a `<li>` with the classes `p <name>` (add `dark` when the glyph must be dark for contrast). The first six are fixed. The rest are ordered by hue of their brand colour. Pick the glyph colour (white or `#111`) that gives the higher contrast on the brand colour, at least 3:1.
+Each link is a `<li>` with the classes `p <name>`. The first six are fixed. The rest are ordered by hue of their brand colour. The glyph is white. Add `dark` only when white gives less than 3:1 on the brand colour (WCAG 1.4.11).
+
+The grid has 6 columns on phones and 8 on wider screens, so 24 links fill every row. With another number of links the last row is shorter.
 
 To add an icon, copy the `<path>` and `viewBox` from the `svgs/` folder of the `@fortawesome/fontawesome-free` npm package.
 

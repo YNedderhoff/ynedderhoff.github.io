@@ -126,24 +126,36 @@ a:focus-visible {
     margin-top: 2.25rem;
 }
 
+/* 24 links fill every row: 6 columns on phones, 8 on wider screens */
 .profiles {
-    display: flex;
-    flex-wrap: wrap;
+    --size: 2.75rem;
+    display: grid;
+    grid-template-columns: repeat(6, var(--size));
     gap: .625rem;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.profiles + .profiles {
-    margin-top: .625rem;
+@media (min-width: 30rem) {
+    .profiles {
+        grid-template-columns: repeat(8, var(--size));
+    }
+}
+
+/* very narrow phones: smaller circles so six still fit */
+@media (max-width: 22.5rem) {
+    .profiles {
+        --size: 2.5rem;
+        gap: .375rem;
+    }
 }
 
 .p {
     display: grid;
     place-items: center;
-    width: 2.75rem;
-    height: 2.75rem;
+    width: var(--size);
+    height: var(--size);
     border-radius: 50%;
     background: var(--brand);
     color: #ffffff;
