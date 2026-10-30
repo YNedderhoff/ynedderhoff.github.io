@@ -131,11 +131,11 @@ a:focus-visible {
     margin-top: 2.25rem;
 }
 
-/* 24 links fill every row: 6 columns on phones, 8 on wider screens */
+/* 5 columns: 20 links fill every row, with 19 only the last row is one short */
 .profiles {
     --size: 2.75rem;
     display: grid;
-    grid-template-columns: repeat(6, var(--size));
+    grid-template-columns: repeat(5, var(--size));
     gap: .625rem;
     margin: 0;
     padding: 0;
@@ -145,11 +145,10 @@ a:focus-visible {
 @media (min-width: 30rem) {
     .profiles {
         --size: 3.125rem;
-        grid-template-columns: repeat(8, var(--size));
     }
 }
 
-/* very narrow phones: smaller circles so six still fit */
+/* very narrow phones: smaller circles */
 @media (max-width: 22.5rem) {
     .profiles {
         --size: 2.5rem;
@@ -204,11 +203,9 @@ a:focus-visible {
 .linkedin { --brand: #0077B5; }
 .github { --brand: #000000; }
 .x { --brand: #000000; }
-.dev { --brand: #08090A; }
 .lastfm { --brand: #BA0200; }
 .reddit { --brand: #FC4820; }
 .strava { --brand: #FC5205; }
-.gitlab { --brand: #E24329; }
 .soundcloud { --brand: #FC561F; }
 .goodreads { --brand: #DBD2BF; }
 .stackoverflow { --brand: #E5681A; }
@@ -216,9 +213,6 @@ a:focus-visible {
 .xing { --brand: #056467; }
 .slideshare { --brand: #0077B5; }
 .dockerhub { --brand: #23364B; }
-.keybase { --brand: #2D7FEB; }
-.steam { --brand: #19445D; }
-.stackexchange { --brand: #3097E8; }
 .tiktok { --brand: #FE2C55; }
 .instagram { --brand: #E44734; }
 
