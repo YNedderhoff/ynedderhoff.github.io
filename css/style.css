@@ -23,7 +23,7 @@
     --bg: light-dark(#ffffff, #14130f);
     --fg: light-dark(#222222, #ece8dc);
     --muted: light-dark(#5c5850, #a8a396);
-    --link: light-dark(#0b6f93, #5ccaf0);
+    --link: light-dark(#077eb0, #0f8db3);
     --ring: light-dark(rgb(0 0 0 / .14), rgb(255 255 255 / .3));
     --gutter: clamp(1.25rem, 5vw, 2rem);
     --measure: min(100% - 2 * var(--gutter), 36rem);
@@ -85,14 +85,18 @@ address {
     font-style: normal;
 }
 
+/* Links have no underline until hover or focus. That only works while the link colour keeps
+   3:1 against the body text and 4.5:1 against the background (WCAG 1.4.1 and 1.4.3). */
 a {
     color: var(--link);
-    text-decoration-thickness: .08em;
+    text-decoration: none;
     text-underline-offset: .18em;
 }
 
-a:hover {
-    text-decoration-thickness: .14em;
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: .08em;
 }
 
 a:focus-visible {
@@ -230,6 +234,9 @@ footer ul {
     list-style: none;
 }
 
+/* The Impressum link must be easy to recognise, so footer links stay underlined. */
 footer a {
     color: var(--muted);
+    text-decoration: underline;
+    text-decoration-thickness: .06em;
 }
