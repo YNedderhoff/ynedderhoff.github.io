@@ -1,0 +1,223 @@
+/* One stylesheet for all pages. No framework, no build step, no third-party requests. */
+
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/raleway-var-latin.woff2") format("woff2");
+    font-weight: 300 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Same metrics as Raleway, so the swap from the fallback does not move any text. */
+@font-face {
+    font-family: "Raleway Fallback";
+    src: local("Arial");
+    size-adjust: 102%;
+    ascent-override: 92.2%;
+    descent-override: 22.9%;
+    line-gap-override: 0%;
+}
+
+:root {
+    color-scheme: light dark;
+    --bg: light-dark(#ffffff, #14130f);
+    --fg: light-dark(#222222, #ece8dc);
+    --muted: light-dark(#5c5850, #a8a396);
+    --link: light-dark(#0b6f93, #5ccaf0);
+    --ring: light-dark(rgb(0 0 0 / .14), rgb(255 255 255 / .3));
+    --gutter: clamp(1.25rem, 5vw, 2rem);
+    --measure: min(100% - 2 * var(--gutter), 36rem);
+    --font: Raleway, "Raleway Fallback", system-ui, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: clamp(1.0625rem, 1rem + .3vw, 1.1875rem);
+    line-height: 1.65;
+}
+
+main {
+    width: var(--measure);
+    margin-inline: auto;
+    padding-block: clamp(2.5rem, 12vh, 7rem) 3rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2.25rem, 1.6rem + 3vw, 3.25rem);
+    font-weight: 300;
+    line-height: 1.15;
+    letter-spacing: -.02em;
+    text-wrap: balance;
+}
+
+main > h1 {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin: 2rem 0 .25rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+p, address, ul.text {
+    margin: 0 0 1.1em;
+    text-wrap: pretty;
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    color: var(--link);
+    text-decoration-thickness: .08em;
+    text-underline-offset: .18em;
+}
+
+a:hover {
+    text-decoration-thickness: .14em;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--link);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+/* intro */
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.75rem;
+}
+
+.avatar {
+    display: block;
+    flex: none;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 1px var(--ring);
+}
+
+/* profile links: round, brand coloured, ordered by hue after the first six */
+
+.profiles-nav {
+    margin-top: 2.25rem;
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .625rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.profiles + .profiles {
+    margin-top: .625rem;
+}
+
+.p {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background: var(--brand);
+    color: #ffffff;
+    box-shadow: 0 0 0 1px var(--ring);
+}
+
+.p.dark {
+    color: #111111;
+}
+
+.p svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+}
+
+.p:focus-visible {
+    outline: 3px solid var(--fg);
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .p {
+        transition: transform .2s ease;
+    }
+
+    .p:hover {
+        transform: translateY(-3px) scale(1.08);
+    }
+}
+
+/* brand colours; glyph colour (.dark) is picked for contrast, see README */
+.mail { --brand: #8BC35A; }
+.key { --brand: #D7D0BE; }
+.mastodon { --brand: #6364FF; }
+.bluesky { --brand: #0085FF; }
+.linkedin { --brand: #0A66C2; }
+.github { --brand: #181717; }
+.x { --brand: #000000; }
+.dev { --brand: #0A0A0A; }
+.lastfm { --brand: #D51007; }
+.reddit { --brand: #FF4500; }
+.strava { --brand: #FC4C02; }
+.gitlab { --brand: #FC6D26; }
+.soundcloud { --brand: #FF5500; }
+.goodreads { --brand: #372213; }
+.stackoverflow { --brand: #F58025; }
+.spotify { --brand: #1ED760; }
+.xing { --brand: #006567; }
+.slideshare { --brand: #0077B5; }
+.dockerhub { --brand: #2496ED; }
+.keybase { --brand: #33A0FF; }
+.steam { --brand: #1B2838; }
+.stackexchange { --brand: #1E5397; }
+.tiktok { --brand: #FE2C55; }
+.instagram { --brand: #E4405F; }
+/* footer */
+
+footer {
+    padding-block: 1rem 1.5rem;
+    font-size: .9375rem;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem 1.5rem;
+    width: var(--measure);
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+footer a {
+    color: var(--muted);
+}
