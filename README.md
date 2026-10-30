@@ -22,7 +22,7 @@ Then open <http://localhost:8000/>.
 
 ## Changing the profile links
 
-Each link is a `<li>` with the classes `p <name>`. The first six are fixed. The rest are ordered by hue of their brand colour: after adding a link and its colour in `css/style.css`, run `python3 scripts/sort_by_hue.py` and put the links in `index.html` in the order it prints. The glyph is white. Add `dark` only when white gives less than 3:1 on the brand colour (WCAG 1.4.11).
+Each link is a `<li>` with the classes `p <name>`. The links form one rainbow. After adding a link and its colour in `css/style.css`, run `python3 scripts/sort_by_hue.py` and put the links in `index.html` in the order it prints. The glyph is white. Add `dark` only when white gives less than 3:1 on the brand colour (WCAG 1.4.11).
 
 The grid has 6 columns on phones and 8 on wider screens, so 24 links fill every row. With another number of links the last row is shorter.
 
