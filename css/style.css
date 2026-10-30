@@ -1,0 +1,243 @@
+/* One stylesheet for all pages. No framework, no build step, no third-party requests. */
+
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/raleway-var-latin.woff2") format("woff2");
+    font-weight: 300 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Same metrics as Raleway, so the swap from the fallback does not move any text. */
+@font-face {
+    font-family: "Raleway Fallback";
+    src: local("Arial");
+    size-adjust: 102%;
+    ascent-override: 92.2%;
+    descent-override: 22.9%;
+    line-gap-override: 0%;
+}
+
+:root {
+    color-scheme: light dark;
+    --bg: light-dark(#ffffff, #14130f);
+    --fg: light-dark(#222222, #ece8dc);
+    --muted: light-dark(#5c5850, #a8a396);
+    --link: light-dark(#077eb0, #0f8db3);
+    --ring: light-dark(#cfcfcf, #4d4a41);
+    --gutter: clamp(1.25rem, 5vw, 2rem);
+    --measure: min(100% - 2 * var(--gutter), 32rem);
+    --font: Raleway, "Raleway Fallback", system-ui, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: clamp(1rem, .95rem + .25vw, 1.0625rem);
+    line-height: 1.65;
+}
+
+main {
+    width: var(--measure);
+    margin-inline: auto;
+    padding-block: clamp(2.5rem, 12vh, 7rem) 3rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 1.4rem + 1.6vw, 2.25rem);
+    font-weight: 300;
+    line-height: 1.15;
+    letter-spacing: -.02em;
+    text-wrap: balance;
+}
+
+main > h1 {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin: 2rem 0 .25rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+p, address, ul.text {
+    margin: 0 0 1.1em;
+    text-wrap: pretty;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Links have no underline until hover or focus. That only works while the link colour keeps
+   3:1 against the body text and 4.5:1 against the background (WCAG 1.4.1 and 1.4.3). */
+a {
+    color: var(--link);
+    text-decoration: none;
+    text-underline-offset: .18em;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: .08em;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--link);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+/* intro */
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.avatar {
+    display: block;
+    flex: none;
+    width: 3.75rem;
+    height: 3.75rem;
+    padding: .3125rem;
+    border: 1px dashed var(--ring);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* profile links: round, brand coloured, ordered by hue after the first six */
+
+.profiles-nav {
+    margin-top: 2.25rem;
+}
+
+/* The circles spread over the full width of the column. 5 columns on phones, 7 on wider screens. */
+.profiles {
+    --size: 2.75rem;
+    display: grid;
+    grid-template-columns: repeat(5, var(--size));
+    justify-content: space-between;
+    gap: .625rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (min-width: 30rem) {
+    .profiles {
+        --size: 3.125rem;
+        grid-template-columns: repeat(7, var(--size));
+    }
+}
+
+/* very narrow phones: smaller circles */
+@media (max-width: 22.5rem) {
+    .profiles {
+        --size: 2.5rem;
+        gap: .375rem;
+    }
+}
+
+.p {
+    display: grid;
+    place-items: center;
+    width: var(--size);
+    height: var(--size);
+    padding: calc(var(--size) / 12);
+    border: 1px dashed var(--ring);
+    border-radius: 50%;
+    background: var(--brand);
+    background-clip: content-box;
+    color: #ffffff;
+}
+
+.p.dark {
+    color: #111111;
+}
+
+.p svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: currentColor;
+}
+
+.p:focus-visible {
+    outline: 3px solid var(--fg);
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .p {
+        transition: transform .2s ease;
+    }
+
+    .p:hover {
+        transform: scale(1.15);
+    }
+}
+
+/* brand colours; the glyph is white unless it would be under 3:1 (.dark), see README */
+.mail { --brand: #639E31; }
+.key { --brand: #D7D0BE; }
+.mastodon { --brand: #6364FF; }
+.bluesky { --brand: #1F89FE; }
+.linkedin { --brand: #0077B5; }
+.github { --brand: #000000; }
+.x { --brand: #000000; }
+.lastfm { --brand: #BA0200; }
+.reddit { --brand: #FC4820; }
+.strava { --brand: #FC5205; }
+.soundcloud { --brand: #FC561F; }
+.goodreads { --brand: #DBD2BF; }
+.stackoverflow { --brand: #E5681A; }
+.spotify { --brand: #1CD156; }
+.xing { --brand: #056467; }
+.slideshare { --brand: #0077B5; }
+.dockerhub { --brand: #23364B; }
+.tiktok { --brand: #FE2C55; }
+.instagram { --brand: #E44734; }
+
+/* footer */
+
+footer {
+    padding-block: 1rem 1.5rem;
+    font-size: .9375rem;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem 1.5rem;
+    width: var(--measure);
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* The Impressum link must be easy to recognise, so footer links stay underlined. */
+footer a {
+    color: var(--muted);
+    text-decoration: underline;
+    text-decoration-thickness: .06em;
+}

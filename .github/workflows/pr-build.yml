@@ -4,6 +4,10 @@ on:
   pull_request:
     branches: [ master ]
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,10 +17,10 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: .
-          # FIXME
-          #blacklist: invalid
-          blacklist: '*.html' # Skipping all HTML files for now until all issues are sorted out.
-          css: true
+          # Plain-text Search Console verification file, not HTML.
+          blacklist: 'google3a4a0a6e7026b0de.html'
+          # The bundled CSS validator does not know modern CSS (margin-inline, text-wrap, light-dark()).
+          css: false
       - name: Generate HTML preview
         id: html_preview
         uses: pavi2410/html-preview-action@v4
