@@ -24,9 +24,9 @@
     --fg: light-dark(#222222, #ece8dc);
     --muted: light-dark(#5c5850, #a8a396);
     --link: light-dark(#077eb0, #0f8db3);
-    --ring: light-dark(rgb(0 0 0 / .14), rgb(255 255 255 / .3));
+    --ring: light-dark(#cfcfcf, #4d4a41);
     --gutter: clamp(1.25rem, 5vw, 2rem);
-    --measure: min(100% - 2 * var(--gutter), 36rem);
+    --measure: min(100% - 2 * var(--gutter), 32rem);
     --font: Raleway, "Raleway Fallback", system-ui, sans-serif;
 }
 
@@ -46,7 +46,7 @@ body {
     background: var(--bg);
     color: var(--fg);
     font-family: var(--font);
-    font-size: clamp(1.0625rem, 1rem + .3vw, 1.1875rem);
+    font-size: clamp(1rem, .95rem + .25vw, 1.0625rem);
     line-height: 1.65;
 }
 
@@ -58,7 +58,7 @@ main {
 
 h1 {
     margin: 0;
-    font-size: clamp(2.25rem, 1.6rem + 3vw, 3.25rem);
+    font-size: clamp(1.75rem, 1.4rem + 1.6vw, 2.25rem);
     font-weight: 300;
     line-height: 1.15;
     letter-spacing: -.02em;
@@ -110,18 +110,19 @@ a:focus-visible {
 .intro {
     display: flex;
     align-items: center;
-    gap: 1.25rem;
-    margin-bottom: 1.75rem;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .avatar {
     display: block;
     flex: none;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    padding: .3125rem;
+    border: 1px dashed var(--ring);
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 0 0 1px var(--ring);
 }
 
 /* profile links: round, brand coloured, ordered by hue after the first six */
@@ -143,6 +144,7 @@ a:focus-visible {
 
 @media (min-width: 30rem) {
     .profiles {
+        --size: 3.125rem;
         grid-template-columns: repeat(8, var(--size));
     }
 }
@@ -160,10 +162,12 @@ a:focus-visible {
     place-items: center;
     width: var(--size);
     height: var(--size);
+    padding: calc(var(--size) / 12);
+    border: 1px dashed var(--ring);
     border-radius: 50%;
     background: var(--brand);
+    background-clip: content-box;
     color: #ffffff;
-    box-shadow: 0 0 0 1px var(--ring);
 }
 
 .p.dark {
@@ -171,8 +175,8 @@ a:focus-visible {
 }
 
 .p svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
     fill: currentColor;
 }
 
@@ -188,35 +192,36 @@ a:focus-visible {
     }
 
     .p:hover {
-        transform: translateY(-3px) scale(1.08);
+        transform: scale(1.15);
     }
 }
 
-/* brand colours; glyph colour (.dark) is picked for contrast, see README */
-.mail { --brand: #8BC35A; }
+/* brand colours; the glyph is white unless it would be under 3:1 (.dark), see README */
+.mail { --brand: #639E31; }
 .key { --brand: #D7D0BE; }
 .mastodon { --brand: #6364FF; }
-.bluesky { --brand: #0085FF; }
-.linkedin { --brand: #0A66C2; }
-.github { --brand: #181717; }
+.bluesky { --brand: #1F89FE; }
+.linkedin { --brand: #0077B5; }
+.github { --brand: #000000; }
 .x { --brand: #000000; }
-.dev { --brand: #0A0A0A; }
-.lastfm { --brand: #D51007; }
-.reddit { --brand: #FF4500; }
-.strava { --brand: #FC4C02; }
-.gitlab { --brand: #FC6D26; }
-.soundcloud { --brand: #FF5500; }
-.goodreads { --brand: #372213; }
-.stackoverflow { --brand: #F58025; }
-.spotify { --brand: #1ED760; }
-.xing { --brand: #006567; }
+.dev { --brand: #08090A; }
+.lastfm { --brand: #BA0200; }
+.reddit { --brand: #FC4820; }
+.strava { --brand: #FC5205; }
+.gitlab { --brand: #E24329; }
+.soundcloud { --brand: #FC561F; }
+.goodreads { --brand: #DBD2BF; }
+.stackoverflow { --brand: #E5681A; }
+.spotify { --brand: #1CD156; }
+.xing { --brand: #056467; }
 .slideshare { --brand: #0077B5; }
-.dockerhub { --brand: #2496ED; }
-.keybase { --brand: #33A0FF; }
-.steam { --brand: #1B2838; }
-.stackexchange { --brand: #1E5397; }
+.dockerhub { --brand: #23364B; }
+.keybase { --brand: #2D7FEB; }
+.steam { --brand: #19445D; }
+.stackexchange { --brand: #3097E8; }
 .tiktok { --brand: #FE2C55; }
-.instagram { --brand: #E4405F; }
+.instagram { --brand: #E44734; }
+
 /* footer */
 
 footer {
